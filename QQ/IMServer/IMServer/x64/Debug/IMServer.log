@@ -1,0 +1,43 @@
+﻿  Kernel.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(105,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(160,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(177,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(204,22): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(226,23): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(208,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(247,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(254,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(260,3): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(295,23): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(323,24): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(308,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(374,23): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(357,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(362,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(407,23): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+E:\sutingnetwork\QQ\IMServer\IMServer\Kernel.cpp(390,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  main.cpp
+  TcpClientMediator.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(34,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(47,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  TcpServerMediator.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(34,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(47,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  UdpMediator.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(34,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(47,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  TcpClientNet.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(34,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(47,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\TcpClientNet.cpp(58,30): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\TcpClientNet.cpp(152,26): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+  TcpServerNet.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(34,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(47,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\TcpServerNet.cpp(97,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\TcpServerNet.cpp(148,33): warning C4244: “参数”: 从“SOCKET”转换到“long”，可能丢失数据
+  UdpNet.cpp
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(34,16): warning C4996: 'inet_ntoa': Use inet_ntop() or InetNtop() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+E:\sutingnetwork\QQ\IMServer\IMServer\net\INet.h(47,26): warning C4996: 'gethostbyname': Use getaddrinfo() or GetAddrInfoW() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+  正在生成代码...
+  IMServer.vcxproj -> E:\sutingnetwork\QQ\IMServer\x64\Debug\IMServer.exe

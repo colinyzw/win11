@@ -1,0 +1,1237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ebf76590-2476-4aba-99d9-958c55bbfc5d"
+  name="IMClass" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <Interface
+        Id="90df892a-3e32-4ed6-b21b-505e0fde951b"
+        name="INet"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="3f2a1ee9-430d-4264-9387-4745ace54e74"
+            isDerived="false"
+            sourceEndRoleName="INet"
+            targetEndRoleName="INetMediator"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="f8e4dd4f-b439-48e4-af1b-e9a25e99ea03"
+              LastKnownName="INetMediator"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a576b69-2be3-4ded-91c9-459a433961dc"
+                  name="INet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4fcbe709-65b5-4048-8e86-c14261b7e43c"
+                  name="INetMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="f30569d9-585f-4002-bcb7-16a0bcb0b986"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="28448bc2-543f-4e60-8a73-3d9d7afb0e3b"
+            name="bool InitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d53e9380-f55a-4ae1-afc9-4b7a93d54eb1"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4f0d259b-91b7-4fc1-8558-eb1b184443ee"
+            name="void recvData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5e9c1269-2b34-45c0-abd1-68ce4172df64"
+            name="void UnInitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f8e4dd4f-b439-48e4-af1b-e9a25e99ea03"
+        name="INetMediator"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b077be39-7391-4606-83ca-96b447d1bf23"
+            isDerived="false"
+            sourceEndRoleName="INetMediator"
+            targetEndRoleName="INet"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="90df892a-3e32-4ed6-b21b-505e0fde951b"
+              LastKnownName="INet"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="56017f17-10b4-47ec-9de2-53f3d9b2819b"
+                  name="INetMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cd34e60a-e4b6-427a-86d1-4962c3923272"
+                  name="INet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="784c015c-d169-48c7-93f9-55bcf944ea42"
+            isDerived="false"
+            sourceEndRoleName="INetMediator"
+            targetEndRoleName="IKernel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b1146e24-9f4d-42dd-9dd7-c4b467042581"
+              LastKnownName="IKernel"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="89cacdf6-beb8-4f2e-a34e-388b02b8eb3a"
+                  name="INetMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4124859d-6949-4774-8e2d-80b26ab11442"
+                  name="IKernel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="3b4aff88-a762-4003-8fc3-1ad65465ee24"
+            name="INet*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="38898a05-46ee-4686-b28b-7625fc35f405"
+            name="bool OpenNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ef2fb710-4074-4c02-85db-da7c29fa0ef5"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d6eceb3e-3d6e-4901-898a-dfdb86631fdb"
+            name="void DealData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="97d96f13-767f-47f2-9366-ef7d1a1dfb89"
+            name="bool CloseNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b58e7dbc-ee05-4971-ae3a-20d4da0ca6e8"
+        name="UdpNet"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f06f2729-6bb1-4727-a22b-aedf70079ccd">
+            <interfaceMoniker
+              Id="90df892a-3e32-4ed6-b21b-505e0fde951b"
+              LastKnownName="INet"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="61882e9a-4d61-44e7-9d48-9ae0fd9d817e"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="45fd322d-1eea-40eb-88f0-6dc037a8f8c5"
+            name="bool InitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="be423009-1825-42da-a8f5-eb9c7261a64c"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b6da25ef-3155-4b8d-9de2-2dcaaefadf63"
+            name="void recvData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9862b688-a920-4fc5-b6ba-4d1e0182032b"
+            name="void UnInitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="22e2aad1-7644-4400-ba2c-0492b706fc83"
+        name="TcpNet"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="4a7c2eca-94d5-4c89-9f61-109a7592af53">
+            <interfaceMoniker
+              Id="90df892a-3e32-4ed6-b21b-505e0fde951b"
+              LastKnownName="INet"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5c8ee044-74e7-4059-9579-acfd2d5ddd23"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="bcdc6dfe-8ecd-4d6b-8fde-83271bed7eab"
+            name="bool InitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d3c9bafd-6387-4581-8498-83ddb6540e3d"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="98bc63a0-cd52-48c4-85b3-d0b8b74f3ae1"
+            name="void recvData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="070dac94-9bfb-481b-a958-9bd591ac2cea"
+            name="void UnInitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0bb50ee2-cc39-425c-bcad-6e02e5aef394"
+        name="UdpMediator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="850585a6-6e50-4a7c-9f10-f1a02e9f7ffa">
+            <interfaceMoniker
+              Id="f8e4dd4f-b439-48e4-af1b-e9a25e99ea03"
+              LastKnownName="INetMediator"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="2045905d-b80d-4f8e-9aea-7c7f27f201fc"
+            name="INet*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5e11367a-e853-42c8-ac30-91b4aa1c4fe3"
+            name="bool OpenNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="21dbcbf2-27f3-4a89-80b8-666c2f2f7de8"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="16f41edf-2596-45c6-aa21-05fc3fe30fd9"
+            name="void DealData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fb81bc4c-2306-4a1e-b68e-4fd086918ea4"
+            name="bool CloseNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87ea332f-3545-437f-8473-2a94acfeeeab"
+        name="TcpMediator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="69d340b5-084f-4aac-867e-79ab597c1061">
+            <interfaceMoniker
+              Id="f8e4dd4f-b439-48e4-af1b-e9a25e99ea03"
+              LastKnownName="INetMediator"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8f6496b1-6a79-4f56-80f5-865027924d29"
+            name="INet*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="09bdb9a8-59b3-40fd-8a9c-dcea6dec250a"
+            name="bool OpenNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="444744ee-7363-4f1c-aa13-8b50f584f791"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="17779cdf-c193-4fb1-bc3a-0d141be3aa40"
+            name="void DealData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9e2638be-a72a-4fe7-b559-07577bf75662"
+            name="bool CloseNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b1146e24-9f4d-42dd-9dd7-c4b467042581"
+        name="IKernel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="c3744865-a516-452c-83d4-7601a62653c6"
+            isDerived="false"
+            sourceEndRoleName="IKernel"
+            targetEndRoleName="CMySql"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="08d19cfe-4e07-4386-bdaa-9345be3847e0"
+              LastKnownName="CMySql"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5c964cca-72ad-43e5-b478-31b80d395e26"
+                  name="IKernel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="abfbeaf3-c03a-4808-ac38-94886354b33d"
+                  name="CMySql"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="4ae61372-e67f-4a9a-a205-8719aedc55af"
+            name="UI*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="dde1b731-1740-4cb2-a054-fd8ff5309dbd"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="d0f7cd4e-1643-4efb-a9b8-3b3b976b43f3"
+        name="UI"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="e4aaa24b-ce45-4482-af31-d2aff3e7750c"
+            isDerived="false"
+            sourceEndRoleName="UI"
+            targetEndRoleName="IKernel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="b1146e24-9f4d-42dd-9dd7-c4b467042581"
+              LastKnownName="IKernel"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fdd5cdb-cc01-428e-95f6-712814c6d444"
+                  name="UI"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="88a2f28e-cb87-422a-83e7-be468378fef3"
+                  name="IKernel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="08d19cfe-4e07-4386-bdaa-9345be3847e0"
+        name="CMySql"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="8007ae6d-8e0a-4cc4-84ca-0c45ca7baa58"
+        name="INet1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="2be83574-86b9-4a32-85aa-61c9066cccd2"
+            isDerived="false"
+            sourceEndRoleName="INet"
+            targetEndRoleName="INetMediator"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="3846a11a-1658-47cc-95fe-65d62f95cdd1"
+              LastKnownName="INetMediator1"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b93a4a4a-15a2-413a-b097-58b83788964a"
+                  name="INet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="787168bc-9bcd-480a-b028-418901ac1286"
+                  name="INetMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="d6133843-64f2-404c-b804-5c1164253f34"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="5fcd0673-5845-4851-a932-132bc0730e0f"
+            name="bool InitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3aa059af-512f-4a37-91a6-a24ee56ef17e"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="13c374d3-c778-406f-9614-05e4b0c3c7f9"
+            name="void recvData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dcb16a0f-395d-4d07-a76a-ffda35335165"
+            name="void UnInitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="3846a11a-1658-47cc-95fe-65d62f95cdd1"
+        name="INetMediator1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="85ab1744-dbf5-493b-9e1e-6167bf45f88f"
+            isDerived="false"
+            sourceEndRoleName="INetMediator"
+            targetEndRoleName="INet"
+            isLeaf="false"
+            isAbstract="false">
+            <interfaceMoniker
+              Id="8007ae6d-8e0a-4cc4-84ca-0c45ca7baa58"
+              LastKnownName="INet1"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bfc7d3f-b14e-4317-aa93-3f3ed16ddb72"
+                  name="INetMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="71b2f6fe-c9d2-4df3-8515-99a1f1c3879b"
+                  name="INet"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="f71af627-854b-4d99-a89f-7081acc60570"
+            isDerived="false"
+            sourceEndRoleName="INetMediator"
+            targetEndRoleName="IKernel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="43888821-9bad-4cc6-b5de-1820f4ebc94b"
+              LastKnownName="IKernel1"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4f0fd60-f100-46f9-adcf-b7ca7207e2bd"
+                  name="INetMediator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="afc88016-08f2-47be-b1fd-49c9df876e3c"
+                  name="IKernel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="26ceeedd-dfc0-4498-91b0-162644cc7a3a"
+            name="INet*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="89955ddd-5852-4a30-8d0c-f3fb65e259dc"
+            name="bool OpenNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dc670696-defa-4ed4-9390-8d9244fd08af"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9cb11c31-5c00-4c83-9063-5370e9eb9756"
+            name="void DealData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="96c46dab-188c-4497-bbbb-d8e42e6fee0d"
+            name="bool CloseNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c8b5e1c9-bd82-40c6-8544-5e4e367aade5"
+        name="UdpNet1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="f9d7305e-8032-43d0-9d28-1fa5eb884f78">
+            <interfaceMoniker
+              Id="8007ae6d-8e0a-4cc4-84ca-0c45ca7baa58"
+              LastKnownName="INet1"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f0edba8a-1f00-4f53-9042-4cca7d3edf29"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2ef7e83b-b299-43d8-888b-7c9e231442e7"
+            name="bool InitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7fe12098-7c53-49de-bc60-75af2e8f6544"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c9ec2907-6e3e-4e2d-b6d7-72f3b16d1ceb"
+            name="void recvData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9a9feb8f-8832-4375-9da2-073d56fa27bf"
+            name="void UnInitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3fa89be2-5b22-4f47-afa1-69c61d33a9e6"
+        name="TcpNet1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="1838083d-1ebd-4c46-9664-78e65b636c43">
+            <interfaceMoniker
+              Id="8007ae6d-8e0a-4cc4-84ca-0c45ca7baa58"
+              LastKnownName="INet1"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="76168583-7812-4c1a-8d30-29cabcdb396f"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9faa253f-e84a-4dd4-b2e9-ec020dbb1dcc"
+            name="bool InitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ac0cd8c2-9d56-4bc7-ab36-5573a3e5d044"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0555e98f-2992-44f2-9fc5-502605cdd494"
+            name="void recvData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a307a251-0b11-4099-bdd2-ca24a61de320"
+            name="void UnInitNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="62aeb7d1-a1f7-4669-8283-cf427deabf3f"
+        name="UdpMediator1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d73d3654-a2a6-4084-8780-1608e19b87ef">
+            <interfaceMoniker
+              Id="3846a11a-1658-47cc-95fe-65d62f95cdd1"
+              LastKnownName="INetMediator1"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="a04fdef6-0e12-4ea9-90ff-c2f3a5f408e6"
+            name="INet*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="09b8f29c-3901-4820-8b6f-964c0f738779"
+            name="bool OpenNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bb341f50-0f0d-4a91-b5c1-f382c75d27c7"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e3f3bb91-f415-4c22-a3b7-5d81f9cb60c6"
+            name="void DealData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8ebf4fb2-2e43-4052-b83a-853f8fa53573"
+            name="bool CloseNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="084f564c-5368-4fd7-a359-56ab0c2e5c4e"
+        name="TcpMediator1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <interfaceRealization
+            Id="d7898ef4-29e0-444f-a5dc-631602963908">
+            <interfaceMoniker
+              Id="3846a11a-1658-47cc-95fe-65d62f95cdd1"
+              LastKnownName="INetMediator1"
+              LastKnownLocation="IMClass.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ff305adb-b4ed-4ec5-8bee-dceeb9475abe"
+            name="INet*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="704c96cf-77b7-4379-b9ed-706f4739fdb6"
+            name="bool OpenNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="022ec83a-ff0c-410b-8d43-28c874492c20"
+            name="bool sendData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="00c18f57-dc84-488b-81cf-da645cd7dd30"
+            name="void DealData()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1566dd6f-144a-46a0-a1b1-b9e2234b46bf"
+            name="bool CloseNet()=0;"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="43888821-9bad-4cc6-b5de-1820f4ebc94b"
+        name="IKernel1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="d310dab6-a5e4-4302-aba5-d9e6c6066ec9"
+            name="UI*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="7a268575-becb-4784-9d68-79d0bdafc7a7"
+            name="INetMediator*"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f376ea1c-d250-4c3a-83e7-c127c1f79642"
+        name="UI1"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="46240d84-335e-4919-89ba-79c9791d48b8"
+            isDerived="false"
+            sourceEndRoleName="UI"
+            targetEndRoleName="IKernel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="43888821-9bad-4cc6-b5de-1820f4ebc94b"
+              LastKnownName="IKernel1"
+              LastKnownLocation="IMClass.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15f4d488-ee99-4a22-9324-11c4fa4fb8ac"
+                  name="UI"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="770abecf-b9e5-40de-ae1d-bd5e27d7537d"
+                  name="IKernel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
