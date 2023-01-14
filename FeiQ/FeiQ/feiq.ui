@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FeiQ</class>
+ <widget class="QDialog" name="FeiQ">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>239</width>
+    <height>445</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>239</width>
+    <height>445</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>FeiQ</string>
+  </property>
+  <widget class="QTableWidget" name="tw_friend">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>221</width>
+     <height>421</height>
+    </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>221</width>
+     <height>421</height>
+    </size>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="rowCount">
+    <number>1</number>
+   </property>
+   <property name="columnCount">
+    <number>2</number>
+   </property>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>150</number>
+   </attribute>
+   <attribute name="horizontalHeaderStretchLastSection">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="verticalHeaderVisible">
+    <bool>false</bool>
+   </attribute>
+   <row/>
+   <column>
+    <property name="text">
+     <string>ip地址</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>主机名</string>
+    </property>
+   </column>
+   <item row="0" column="0">
+    <property name="text">
+     <string>192.168.1.1</string>
+    </property>
+   </item>
+   <item row="0" column="1">
+    <property name="text">
+     <string>尤治伟</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
